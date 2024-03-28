@@ -1,0 +1,66 @@
+/*  GENERAL */
+@import "css/reset.css";
+@import "css/variables.css";
+
+/*  UTILS */
+@import "css/utils/layout.utils.css";
+@import "css/utils/spacing.utils.css";
+@import "css/utils/typography.utils.css";
+@import "css/utils/flex-grid.utils.css";
+
+/*  COMPONENTS (UI) */
+@import "css/components/table.component.css";
+@import "css/components/list.component.css";
+@import "css/components/image.component.css";
+
+
+/*  Specific to this project */
+
+body {
+  background-color: var(--clr-neutral-100); 
+  color: var(--clr-neutral-600);
+  font-weight: var(--ff-400-weight);
+  font-family: var(--ff-outfit);
+}
+
+h1 {
+  color: var(--clr-neutral-700);
+  font-weight: var(--ff-400-weight);
+  font-family: var(--ff-youngSerif);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  color: var(--clr-primary-400);
+  font-weight: var(--ff-400-weight);
+  font-family: var(--ff-youngSerif);
+}
+
+h3 {
+  color: var(--clr-primary-500);
+  font-weight: var(--ff-600-weight);
+  font-family: var(--ff-outfit);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid var( --clr-neutral-400);
+}
+
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--clr-neutral-300);
+  }
+
+  .wrapper {
+    background-color: var(--clr-neutral-100);
+    margin-inline: auto;
+    width: 500px;
+    margin-block: 6rem;
+    border-radius: 10px;
+  }
+}
